@@ -7,6 +7,6 @@ then -call   python manage.py makemigrations    ---
 call -       python manage.py migrate    ---
 bult in templet for just call -         python manage.py createsuperuser
 and project run -                       python manage.py runserver 
-and create app file and link up main project -          python manage.py startapp crudsApp
+and create app file and link up main project -          python manage.py startapp anyappname
 
 
