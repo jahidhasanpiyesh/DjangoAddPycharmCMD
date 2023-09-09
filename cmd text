@@ -1,12 +1,34 @@
-Install Pycharm this pc/laptop  --
-Run Pycharm IDE    --
-Create any project Filename for Pycharm and create to virtual Environment setup  --
-Then -       pip install django  --
-Then call -  python -m startproject AnyProjectName .  --
-then -call   python manage.py makemigrations    ---
-call -       python manage.py migrate    ---
-bult in templet for just call -         python manage.py createsuperuser
-and project run -                       python manage.py runserver 
-and create app file and link up main project -          python manage.py startapp anyappname
+step 1 :     Install Pycharm this pc/laptop  --
+step 2 :     Run Pycharm IDE    --
+step 3 :     Create any project Filename for Pycharm and create to virtual Environment setup  --
+step 4 :     Then -       pip install django  --
+step 5 :     Then call -  python -m startproject AnyProjectName .  --
+step 6 :     then -call   python manage.py makemigrations    ---
+step 7 :     call -       python manage.py migrate    ---
+step 8 :     bult in templet for just call -         python manage.py createsuperuser
+step 9 :     and project run -                       python manage.py runserver 
+step 10 :     and create app file and link up main project -          python manage.py startapp anyappname
+
+and create or change this code :---------------------------------------------------------------
+
+step 11 :
+
+In Settings.py : 
+
+STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
+STATICFILES_DIRS = [BASE_DIR / 'static', ]
+MEDIA_ROOT = BASE_DIR / 'media'
+
+in Project urls.py:
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
 
 
