@@ -29,6 +29,8 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+step 12:        projectApp file to create newfile in urls.py 
+step 13:        coppy to main project urls.py file and add projectApp file to urls.py 
 
 
 
