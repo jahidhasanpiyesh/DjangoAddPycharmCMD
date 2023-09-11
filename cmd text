@@ -1,8 +1,9 @@
 step 1 :     Install Pycharm this pc/laptop  --
 step 2 :     Run Pycharm IDE    --
 step 3 :     Create any project Filename for Pycharm and create to virtual Environment setup  --
+            python -m venv env
 step 4 :     Then -       pip install django  --
-step 5 :     Then call -  python -m startproject AnyProjectName .  --
+step 5 :     Then call -  django-admin startproject AnyProjectName .  --
 step 6 :     then -call   python manage.py makemigrations    ---
 step 7 :     call -       python manage.py migrate    ---
 step 8 :     bult in templet for just call -         python manage.py createsuperuser
